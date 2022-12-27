@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Poppins:wght@300&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Poppins:wght@300&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.head{
+.head {
   background-image: url(./images/Background.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
