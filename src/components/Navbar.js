@@ -1,6 +1,7 @@
 import logo from "../images/Logo.svg";
 import { BsCart3 } from "react-icons/bs";
 import { LogoContainer, NavContainer, NavItems } from "./styles";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
         <h6>CoffeeStore</h6>
       </LogoContainer>
       <NavItems>
-        <a href="#">Home</a>
+        <Link to="/">Home</Link>
         <a href="#">Menu</a>
         <a href="#">About</a>
         <a href="#">Services</a>

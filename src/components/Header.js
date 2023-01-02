@@ -1,20 +1,20 @@
 import Navbar from "./Navbar";
 import { Banner, Content } from "./styles";
 
-
-const Header = () => {
+const Header = ({ title, text }) => {
   return (
     <Banner className="head">
+      {/* <div className="black__background"></div> */}
       <Navbar />
       <Content>
-        <h4>A Cup Of Coffee For Everyone.</h4>
-        <p>We Don’t Make Your Coffee, We Make Your Day.</p>
+        <h4>{title}</h4>
+        <p>{text}</p>
         <div className="btn">
-        <button>VIEW MENU</button>
+          <button>VIEW MENU</button>
         </div>
       </Content>
     </Banner>
   );
 };
 
-export default Header
+export default Header;
