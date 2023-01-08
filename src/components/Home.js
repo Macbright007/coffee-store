@@ -9,7 +9,13 @@ import Services from "./Services";
 const Home = () => {
   return (
     <div>
-      <Header title="A Cup Of Coffee For Everyone." text="We Don’t Make Your Coffee, We Make Your Day." />
+      <Header>
+        <h4>A Cup Of Coffee For Everyone.</h4>
+        <p>We Don’t Make Your Coffee, We Make Your Day.</p>
+        <div className="btn">
+          <button>VIEW MENU</button>
+        </div>
+      </Header>
       <About />
       <Services />
       <CoffeeMenu />

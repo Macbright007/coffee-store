@@ -55,10 +55,25 @@ export const NavContainer = styled.div`
   // border: 2px solid white;
   padding: 20px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
+
+  .cart {
+    position: relative;
+    // border: 2px solid white;
+  }
+  .cart span {
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    padding: 2px 8px;
+    font-size: 14px;
+    top: -5px;
+    font-weight: 900;
+    right: -6px;
+  }
 `;
 export const LogoContainer = styled.div`
   display: flex;
@@ -97,18 +112,18 @@ export const AboutWrapper = styled.div`
     text-align: center;
     border: 2px solid black;
     width: 10%;
-    margin: 3rem auto;
-    padding: 5px;
+    margin: 5rem auto;
+    padding: 8px 5px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 20px;
-    // line-height: 42px;
+    line-height: 42px;
   }
 `;
 export const InnerWrapper = styled.div`
   // border: 2px solid red;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -132,7 +147,7 @@ export const LeftSideContent = styled.div`
 
   p {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 30px;
     color: #333;
   }
@@ -197,8 +212,8 @@ export const MenuContainer = styled.div`
     text-transform: uppercase;
     font-weight: 600;
     font-size: 20px;
-    // line-height: 42px;
-    padding: 5px;
+    line-height: 42px;
+    padding: 8px 5px;
   }
 `;
 
@@ -207,7 +222,7 @@ export const CoffeeContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   gap: 20px;
 `;
@@ -216,7 +231,7 @@ export const CoffeeContainer = styled.div`
 export const CoffeeCardCont = styled.div`
   border: 2px solid rgba(177, 175, 175, 0.514);
   // width: 300px;
-  height: 350px;
+  height: 370px;
   background: #e8e8e8;
 `;
 
@@ -282,17 +297,17 @@ export const ContactWrapper = styled.div`
     border: 2px solid black;
     width: 10%;
     margin: 60px auto;
-    padding: 5px;
+    padding: 8px 5px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 20px;
-    // line-height: 42px;
+    line-height: 42px;
   }
 `;
 export const InnerContact = styled.div`
   // border: 2px solid red;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
@@ -324,7 +339,7 @@ export const ContactGrid = styled.div`
 // Footer styling
 
 export const FooterWrapper = styled.footer`
-  border: 2px solid black;
+  // border: 2px solid black;
   background: #794e21;
   margin-top: 5rem;
   padding: 10px;
@@ -340,7 +355,7 @@ export const FooterWrapper = styled.footer`
 export const InnerFooter = styled.div`
   // border: 2px solid blue;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

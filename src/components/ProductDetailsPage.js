@@ -11,7 +11,9 @@ const ProductDetailsPage = () => {
   const coffee = CoffeeDetails.find((cof) => cof.id === Number(params.id));
   return (
     <div>
-      <Header title="Product Details" text="" />
+      <Header>
+        <h4>Product Details</h4>
+      </Header>
       <ProductDetailCard coffee={coffee} />;
       <Footer />
     </div>

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import CoffeeContext from "../contexts/CoffeeContext";
 import {
   AboutWrapper,
   ImgContainer,
@@ -7,6 +8,8 @@ import {
 } from "./styles";
 
 const ProductDetailCard = ({ coffee }) => {
+  const { addToCart } = useContext(CoffeeContext);
+
   return (
     <AboutWrapper>
       <InnerWrapper>
@@ -24,7 +27,7 @@ const ProductDetailCard = ({ coffee }) => {
           <span>Available</span>
           <div className="inner_content">
             <h2>${coffee.price}</h2>
-            <button>Add to cart</button>
+            <button onClick={() => addToCart(coffee)}>Add to cart</button>
           </div>
         </LeftSideContent>
       </InnerWrapper>

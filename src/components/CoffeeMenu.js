@@ -9,11 +9,12 @@ const CoffeeMenu = () => {
 
       <CoffeeContainer>
         {CoffeeDetails.map((coffee) => {
-          return <CoffeeCard coffee={coffee} />;
+          return <CoffeeCard coffee={coffee} />
         })}
       </CoffeeContainer>
     </MenuContainer>
   );
 };
+
 
 export default CoffeeMenu;
