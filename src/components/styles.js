@@ -285,7 +285,8 @@ export const CoffeeContents = styled.div`
   }
 
   .inner_detail > button {
-    padding: 0px 5px;
+    padding: 3px 5px;
+    cursor: pointer;
   }
 `;
 
@@ -349,7 +350,7 @@ export const FooterWrapper = styled.footer`
     font-size: 15px;
     line-height: 24px;
     color: #fff;
-    margin: 1rem 28rem;
+    margin: 1rem 22rem;
   }
 `;
 export const InnerFooter = styled.div`
@@ -389,5 +390,121 @@ export const InnerFooter = styled.div`
     font-size: 18px;
     line-height: 27px;
     margin-top: 5px;
+  }
+`;
+
+// styling for cartpage
+export const CartBody = styled.table`
+  // padding: 20px;
+  border: 2px solid red;
+  width: 100%;
+  // height: 100%;
+
+
+  .ending{
+    // border: 2px solid black;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background: #794E21;
+    color: white;
+    padding: 7px;
+  }
+
+  .ending p{
+    margin-top: 3px;
+  }
+
+  .btn-btn{
+    // border: 2px solid black;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #794E21;
+    color: white;
+    padding: 7px;
+  }
+`;
+export const CartHead = styled.div`
+  border: 2px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+`;
+export const InnerHead = styled.tr`
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333;
+    text-align: center;
+  }
+`;
+
+export const InnerCartBody = styled.tbody`
+  // padding: 10px;
+  // border: 2px solid blue;
+  width: 100%;
+  max-width: 1200px;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    color: #333333;
+    // margin-left: 4rem;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    color: #794e21;
+    // margin-right: 4rem;
+  }
+
+  .del {
+    color: red;
+    font-size: 30px;
+    margin-right: 2.7rem;
+  }
+
+  .left {
+    background: red;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 1rem;
+  }
+  .right {
+    background: green;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 1rem;
+  }
+`;
+
+export const CartImgCont = styled.div`
+  // border: 2px solid black;
+  width: 120px;
+  height: 120px;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;

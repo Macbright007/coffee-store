@@ -6,7 +6,7 @@ const CoffeeContext = createContext({});
 
 export const CoffeeProvider = ({children}) => {
     const [addedCoffee, setAddedCoffee] = useState([])
-
+    
     const addToCart = (coffee) => {
         setAddedCoffee((prevState) => [...prevState, coffee])
     }
