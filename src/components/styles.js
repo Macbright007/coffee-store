@@ -258,6 +258,7 @@ export const LeftSideContent = styled.div`
 
     p {
       font-size: 20px;
+      // color: green;
     }
   }
 `;
@@ -282,7 +283,7 @@ export const MenuContainer = styled.div`
   @media (max-width: 950px) {
     h4 {
       width: 50%;
-      font-size: 25px;
+      font-size: 23px;
     }
   }
 `;
@@ -299,6 +300,7 @@ export const CoffeeContainer = styled.div`
   @media (max-width: 950px) {
     grid-template-columns: 1fr;
     max-width: 320px;
+    // border: 2px solid blue;
   }
 `;
 
@@ -312,6 +314,7 @@ export const CoffeeCardCont = styled.div`
   @media (max-width: 950px) {
     border-radius: 20px;
     // border: 2px solid blue;
+
   }
 `;
 
@@ -378,14 +381,18 @@ export const CoffeeContents = styled.div`
   }
 
   @media (max-width: 950px) {
+    // border: 2px solid blue;
+    padding: 10px;
+
     h2 {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 800;
+      margin-top: -8px;
     }
 
     p {
       font-size: 24px;
-      // color: red;
+      color: red;
     }
     .pp {
       font-size: 15px;
@@ -393,13 +400,13 @@ export const CoffeeContents = styled.div`
     }
 
     .inner_detail > h2 {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 900;
     }
     .inner_detail > button {
-      font-size: 15px;
+      font-size: 13px;
       font-weight: 900;
-      margin-top: -7px;
+      margin-top: -4px;
     }
   }
 `;
@@ -422,7 +429,7 @@ export const ContactWrapper = styled.div`
   @media (max-width: 950px) {
     h2 {
       width: 50%;
-      font-size: 25px;
+      font-size: 23px;
     }
   }
 `;
@@ -502,7 +509,7 @@ export const FooterWrapper = styled.footer`
       font-size: 18px;
       // background: blue;
       width: 55%;
-      margin: 26rem 3rem;
+      margin: 24rem 3rem;
       
     }
   }
