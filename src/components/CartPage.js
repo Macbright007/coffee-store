@@ -12,24 +12,23 @@ import {
 } from "./styles";
 
 const CartPage = () => {
-  const { addedCoffee } = useContext(CoffeeContext);
-
+  const { addedCoffee, removeFromCart } = useContext(CoffeeContext);
 
   return (
     <div>
       <Header>
         <h4>Cart</h4>
       </Header>
- 
+
       <CartBody>
         <CartHead>
           <InnerHead>
-          <th>Products</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
-          <th>Remove</th>
+            <th>Products</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
           </InnerHead>
         </CartHead>
         {addedCoffee.map((coffee) => {
@@ -48,7 +47,10 @@ const CartPage = () => {
 
               <td>$50</td>
 
-              <RiDeleteBinLine className="del" />
+              <RiDeleteBinLine
+                className="del"
+                onClick={() => removeFromCart(coffee.id)}
+              />
             </InnerCartBody>
           );
         })}
@@ -58,9 +60,9 @@ const CartPage = () => {
           <p>$500.00</p>
         </div>
 
-        <button className="btn-btn">
-          proceed to checkout
-        </button>
+        <div className="btn__btn">
+          <button>proceed to checkout</button>
+        </div>
       </CartBody>
 
       <Footer />

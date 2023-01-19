@@ -49,6 +49,22 @@ export const Content = styled.div`
     font-weight: 900;
     border: none;
   }
+
+  @media (max-width: 950px) {
+    h4 {
+      font-size: 35px;
+    }
+
+    p {
+      margin-top: 7px;
+      font-size: 23px;
+    }
+
+    .btn > button {
+      padding: 15px 20px;
+      font-size: 18px;
+    }
+  }
 `;
 // navbar styling
 export const NavContainer = styled.div`
@@ -74,6 +90,12 @@ export const NavContainer = styled.div`
     font-weight: 900;
     right: -6px;
   }
+
+  // @media (max-width: 950px) {
+  //   border: 2px solid white;
+  //   position: fixed;
+  //   top: 0;
+  // }
 `;
 export const LogoContainer = styled.div`
   display: flex;
@@ -85,6 +107,14 @@ export const LogoContainer = styled.div`
     color: white;
     font-size: 18px;
     font-weight: 900;
+  }
+
+  @media (max-width: 950px) {
+    height: 40px;
+
+    h6 {
+      font-size: 20px;
+    }
   }
 `;
 export const NavItems = styled.div`
@@ -99,6 +129,10 @@ export const NavItems = styled.div`
     font-size: 16px;
     text-transform: Uppercase;
     margin-left: 25px;
+  }
+
+  @media (max-width: 950px) {
+    display: none;
   }
 `;
 
@@ -119,6 +153,13 @@ export const AboutWrapper = styled.div`
     font-size: 20px;
     line-height: 42px;
   }
+
+  @media (max-width: 950px) {
+    h3 {
+      width: 50%;
+      font-size: 25px;
+    }
+  }
 `;
 export const InnerWrapper = styled.div`
   // border: 2px solid red;
@@ -127,6 +168,10 @@ export const InnerWrapper = styled.div`
   margin: auto;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -138,6 +183,13 @@ export const ImgContainer = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media (max-width: 950px) {
+    width: 85%;
+    height: 300px;
+    margin: auto;
+    // border: 2px solid blue;
   }
 `;
 
@@ -197,8 +249,19 @@ export const LeftSideContent = styled.div`
     color: #333;
     text-transform: uppercase;
   }
+
+  @media (max-width: 950px) {
+    width: 300px;
+    // border: 2px solid blue;
+    margin: 30px auto;
+    text-align: left;
+
+    p {
+      font-size: 20px;
+    }
+  }
 `;
-// Menu styling
+// Services styling
 
 export const MenuContainer = styled.div`
   // border: 2px solid red;
@@ -215,6 +278,13 @@ export const MenuContainer = styled.div`
     line-height: 42px;
     padding: 8px 5px;
   }
+
+  @media (max-width: 950px) {
+    h4 {
+      width: 50%;
+      font-size: 25px;
+    }
+  }
 `;
 
 export const CoffeeContainer = styled.div`
@@ -225,6 +295,11 @@ export const CoffeeContainer = styled.div`
   max-width: 1200px;
   margin: auto;
   gap: 20px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
 `;
 
 // coffee card styling
@@ -233,6 +308,11 @@ export const CoffeeCardCont = styled.div`
   // width: 300px;
   height: 370px;
   background: #e8e8e8;
+
+  @media (max-width: 950px) {
+    border-radius: 20px;
+    // border: 2px solid blue;
+  }
 `;
 
 export const CoffeeImgCont = styled.div`
@@ -243,6 +323,14 @@ export const CoffeeImgCont = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media (max-width: 950px) {
+    border-radius: 20px;
+
+    img {
+      border-radius: 20px;
+    }
   }
 `;
 
@@ -288,6 +376,32 @@ export const CoffeeContents = styled.div`
     padding: 3px 5px;
     cursor: pointer;
   }
+
+  @media (max-width: 950px) {
+    h2 {
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 24px;
+      // color: red;
+    }
+    .pp {
+      font-size: 15px;
+      line-height: 17px;
+    }
+
+    .inner_detail > h2 {
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .inner_detail > button {
+      font-size: 15px;
+      font-weight: 900;
+      margin-top: -7px;
+    }
+  }
 `;
 
 export const ContactWrapper = styled.div`
@@ -304,6 +418,13 @@ export const ContactWrapper = styled.div`
     font-size: 20px;
     line-height: 42px;
   }
+
+  @media (max-width: 950px) {
+    h2 {
+      width: 50%;
+      font-size: 25px;
+    }
+  }
 `;
 export const InnerContact = styled.div`
   // border: 2px solid red;
@@ -312,6 +433,12 @@ export const InnerContact = styled.div`
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 950px) {
+    // border: 2px solid black;
+    flex-direction: column;
+    max-width: 320px;
+  }
 `;
 export const ContactGrid = styled.div`
   // border: 2px solid blue;
@@ -335,6 +462,20 @@ export const ContactGrid = styled.div`
     color: #8c8c8c;
     margin-top: 7px;
   }
+
+  @media (max-width: 950px) {
+    // border: 2px solid red;
+    margin: 20px auto;
+    text-align: center;
+
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
 `;
 
 // Footer styling
@@ -351,6 +492,19 @@ export const FooterWrapper = styled.footer`
     line-height: 24px;
     color: #fff;
     margin: 1rem 22rem;
+  }
+
+  @media (max-width: 950px) {
+    height: 100vh;
+
+    .fp {
+      font-weight: 500;
+      font-size: 18px;
+      // background: blue;
+      width: 55%;
+      margin: 26rem 3rem;
+      
+    }
   }
 `;
 export const InnerFooter = styled.div`
@@ -391,6 +545,16 @@ export const InnerFooter = styled.div`
     line-height: 27px;
     margin-top: 5px;
   }
+
+  @media (max-width: 950px) {
+    // border: 2px solid red;
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    
+    // .box{
+    //   border: 2px solid white;
+    // }
+  }
 `;
 
 // styling for cartpage
@@ -400,29 +564,28 @@ export const CartBody = styled.table`
   width: 100%;
   // height: 100%;
 
-
-  .ending{
+  .ending {
     // border: 2px solid black;
     width: 100%;
     max-width: 600px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    background: #794E21;
+    background: #794e21;
     color: white;
     padding: 7px;
   }
 
-  .ending p{
+  .ending p {
     margin-top: 3px;
   }
 
-  .btn-btn{
+  .btn__btn {
     // border: 2px solid black;
     width: 100%;
     max-width: 600px;
-    margin: 20px auto;
-    background: #794E21;
+    margin: 5rem auto;
+    background: #794e21;
     color: white;
     padding: 7px;
   }
@@ -479,6 +642,7 @@ export const InnerCartBody = styled.tbody`
     color: red;
     font-size: 30px;
     margin-right: 2.7rem;
+    cursor: pointer;
   }
 
   .left {
@@ -502,7 +666,7 @@ export const CartImgCont = styled.div`
   width: 120px;
   height: 120px;
 
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
