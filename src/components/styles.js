@@ -612,9 +612,11 @@ export const CartWrapper = styled.div`
   }
 
   @media (max-width: 950px) {
-    // width: 320px;
     overflow: hidden;
 
+    .scroll__bar{
+      overflow: auto;
+    }
     .ending, .btn__btn{
       width: 300px;
     }
@@ -660,9 +662,14 @@ export const CartBody = styled.table`
   }
 
   @media (max-width: 950px) {
-    // width: 320px;
-    // border: 2px solid red;
-    overflow: auto;
+    .left{
+      padding: 4px 16px;
+      margin-bottom: 10rem;
+    }
+    .right{
+      padding: 4px 16px;
+      margin-top: 10rem;
+    }
   }
 `;
 
@@ -677,5 +684,10 @@ export const CartImgCont = styled.div`
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+  }
+
+  @media (max-width: 950px) {
+   width: 80px;
+   height: 80px;
   }
 `;

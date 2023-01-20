@@ -14,41 +14,46 @@ const CartPage = () => {
         <h4>Cart</h4>
       </Header>
 
-      <CartBody>
-        <tr>
-          <th>Products</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
-          <th>Remove</th>
-        </tr>
+      <div className="scroll__bar">
+        <CartBody>
+          <tr>
+            <th>Products</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
 
-        {addedCoffee.map((coffee) => {
-          return (
-            <tr>
-              <td>
-                <CartImgCont>
-                  <img src={coffee.img} alt="coffee" />
-                </CartImgCont>
-              </td>
-              <td>{coffee.coffee_name}</td>
-              <td>${coffee.price}</td>
-              <td>
-                <span className="left">-</span> 1
-                <span className="right">+</span>
-              </td>
-              <td>$50</td>
-              <td>
-                <RiDeleteBinLine
-                  className="del"
-                  onClick={() => removeFromCart(coffee.id)}
-                />
-              </td>
-            </tr>
-          );
-        })}
-      </CartBody>
+          {addedCoffee.map((coffee) => {
+            return (
+              <tr>
+                <td>
+                  <CartImgCont>
+                    <img src={coffee.img} alt="coffee" />
+                  </CartImgCont>
+                </td>
+                <td>{coffee.coffee_name}</td>
+                <td>${coffee.price}</td>
+                <td>
+                  <div>
+                    <span className="left">-</span> 
+                    <span className="middle">1</span> 
+                    <span className="right">+</span>
+                  </div>
+                </td>
+                <td>$50</td>
+                <td>
+                  <RiDeleteBinLine
+                    className="del"
+                    onClick={() => removeFromCart(coffee.id)}
+                  />
+                </td>
+              </tr>
+            );
+          })}
+        </CartBody>
+      </div>
 
       <div className="total">
         <div className="ending">
