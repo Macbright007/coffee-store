@@ -77,6 +77,7 @@ export const NavContainer = styled.div`
   justify-content: space-between;
 
   .cart {
+    color: black;
     position: relative;
     // border: 2px solid white;
   }
@@ -314,7 +315,6 @@ export const CoffeeCardCont = styled.div`
   @media (max-width: 950px) {
     border-radius: 20px;
     // border: 2px solid blue;
-
   }
 `;
 
@@ -392,7 +392,7 @@ export const CoffeeContents = styled.div`
 
     p {
       font-size: 24px;
-      color: red;
+      // color: red;
     }
     .pp {
       font-size: 15px;
@@ -510,7 +510,6 @@ export const FooterWrapper = styled.footer`
       // background: blue;
       width: 55%;
       margin: 24rem 3rem;
-      
     }
   }
 `;
@@ -557,7 +556,7 @@ export const InnerFooter = styled.div`
     // border: 2px solid red;
     grid-template-columns: 1fr;
     max-width: 320px;
-    
+
     // .box{
     //   border: 2px solid white;
     // }
@@ -565,12 +564,10 @@ export const InnerFooter = styled.div`
 `;
 
 // styling for cartpage
-export const CartBody = styled.table`
-  // padding: 20px;
-  border: 2px solid red;
-  width: 100%;
-  // height: 100%;
-
+export const CartWrapper = styled.div`
+  .total {
+    margin-top: 8rem;
+  }
   .ending {
     // border: 2px solid black;
     width: 100%;
@@ -591,60 +588,55 @@ export const CartBody = styled.table`
     // border: 2px solid black;
     width: 100%;
     max-width: 600px;
-    margin: 5rem auto;
+    margin: 2rem auto;
     background: #794e21;
     color: white;
-    padding: 7px;
+    // padding: 7px;
+  }
+
+  .btn__btn button {
+    width: 100%;
+    height: 100%;
+    // background: #794e21;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .btn__btn button:hover{
+    background-color: gray;
+    color: white;
+  }
+
+  @media (max-width: 950px) {
+    // width: 320px;
+    overflow: hidden;
+
+    .ending, .btn__btn{
+      width: 300px;
+    }
   }
 `;
-export const CartHead = styled.div`
-  border: 2px solid black;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-`;
-export const InnerHead = styled.tr`
-  padding: 20px;
+
+export const CartBody = styled.table`
+  // padding: 20px;
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
+  border-collapse: collapse;
+  // border: 1px solid #ddd;
+  text-align: left;
 
-  h1 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    color: #333;
-    text-align: center;
+  th {
+    padding: 15px;
+    border-bottom: 2px solid #000;
   }
-`;
-
-export const InnerCartBody = styled.tbody`
-  // padding: 10px;
-  // border: 2px solid blue;
-  width: 100%;
-  max-width: 1200px;
-  margin: 5rem auto;
-  display: flex;
-  justify-content: space-between;
-
-  h2 {
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 38px;
-    color: #333333;
-    // margin-left: 4rem;
+  td {
+    padding: 15px;
   }
-
-  p {
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 38px;
-    color: #794e21;
-    // margin-right: 4rem;
-  }
-
   .del {
     color: red;
     font-size: 30px;
@@ -666,16 +658,24 @@ export const InnerCartBody = styled.tbody`
     color: white;
     margin-left: 1rem;
   }
+
+  @media (max-width: 950px) {
+    // width: 320px;
+    // border: 2px solid red;
+    overflow: auto;
+  }
 `;
 
 export const CartImgCont = styled.div`
   // border: 2px solid black;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
 `;
