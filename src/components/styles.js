@@ -565,6 +565,33 @@ export const InnerFooter = styled.div`
 
 // styling for cartpage
 export const CartWrapper = styled.div`
+  .empty-cart {
+    text-align: center;
+    padding-bottom: 20px; 
+  }
+
+  .img-fluid {
+    // border: 2px solid black;
+    width: 40%;
+  }
+
+  .empty-cart p {
+    margin-bottom: 30px;
+  }
+  .empty-cart a {
+    // border: 2px solid red;
+    text-decoration: none;
+    background: lightgrey;
+    padding: 10px;
+    color: gray;
+    font-weight: bold;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .empty-cart a:hover {
+    background-color: black;
+    color: #fff;
+  }
   .total {
     margin-top: 8rem;
   }
@@ -580,8 +607,9 @@ export const CartWrapper = styled.div`
     padding: 7px;
   }
 
-  .ending p {
-    margin-top: 3px;
+  .ending p, h3 {
+    // margin-top: 3px;
+    font-size: 27px;
   }
 
   .btn__btn {
@@ -606,7 +634,7 @@ export const CartWrapper = styled.div`
     text-transform: uppercase;
   }
 
-  .btn__btn button:hover{
+  .btn__btn button:hover {
     background-color: gray;
     color: white;
   }
@@ -614,10 +642,11 @@ export const CartWrapper = styled.div`
   @media (max-width: 950px) {
     overflow: hidden;
 
-    .scroll__bar{
+    .scroll__bar {
       overflow: auto;
     }
-    .ending, .btn__btn{
+    .ending,
+    .btn__btn {
       width: 300px;
     }
   }
@@ -662,11 +691,11 @@ export const CartBody = styled.table`
   }
 
   @media (max-width: 950px) {
-    .left{
+    .left {
       padding: 4px 16px;
       margin-bottom: 10rem;
     }
-    .right{
+    .right {
       padding: 4px 16px;
       margin-top: 10rem;
     }
@@ -687,7 +716,7 @@ export const CartImgCont = styled.div`
   }
 
   @media (max-width: 950px) {
-   width: 80px;
-   height: 80px;
+    width: 80px;
+    height: 80px;
   }
 `;
